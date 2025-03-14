@@ -1,0 +1,28 @@
+
+
+
+.userContainer {
+    width: 80%;
+    margin: 0 auto; /* Center the element */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px; /* Add 30px padding on left and right */
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9; /* Optional: adds background for visibility */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+    border-radius: 8px; /* Optional: rounded corners */
+    /* gap: 20px; */
+  }
+  
+  .iconContainer {
+    display: flex;
+    gap: 30px; /* 30px space between icons */
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+  }
+  

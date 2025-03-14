@@ -1,0 +1,40 @@
+.service-admin {
+    padding: 20px;
+}
+
+.service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+    background-color: #fff;
+}
+
+.service-item h3 {
+    margin: 0;
+}
+
+.icon-group {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.icon-group span {
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.icon-group span:hover {
+    color: #333;
+}

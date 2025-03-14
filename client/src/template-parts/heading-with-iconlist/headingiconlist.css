@@ -1,0 +1,36 @@
+/* src/components/headingiconlist.css
+**/
+
+.heading-icon-list {
+  text-align: left; /* Align text to the left */
+  margin: 20px 0; /* Add vertical space between sections */
+}
+
+.heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.list {
+  list-style: none; /* Remove default list bullets */
+  padding-left: 20px; /* Add some space on the left side of the list */
+  margin: 0; /* Remove any default margin */
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the icon and text */
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px; /* Space between list items */
+}
+
+.bullet-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* Ensure the icon scales correctly */
+}
+ 

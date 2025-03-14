@@ -1,0 +1,44 @@
+.allUserContainer {
+    max-height: 80dvh; /* Adjust height as needed for the visible area */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+    padding: 10px;
+   
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  /* Styling for the list */
+  .allUserContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* 5px gap between list items */
+  }
+  
+  .userContainer {
+    width: 80%;
+    margin: 0 auto; /* Center the element */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px; /* Add padding on left and right */
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .iconContainer {
+    display: flex;
+    gap: 30px; /* Space between icons */
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+  }
+  
