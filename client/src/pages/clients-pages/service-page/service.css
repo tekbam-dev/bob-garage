@@ -1,0 +1,303 @@
+
+/* src/components/service.css */
+
+/* Services Container */
+.services-container {
+    max-width: 1800px; /* Limit container width for a cleaner look */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between sections */
+  }
+  
+  /* Ensure each section inside the container has similar styling */
+  .services-container > * {
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Internal padding for each section */
+    margin: 0 20px; /* Side margin to reduce width slightly on large screens */
+  }
+  
+  /* Banner Section */
+  .banner-section {
+    text-align: center; /* Center the banner text */
+    padding: 40px 0; /* Extra padding for the banner */
+  }
+  
+  /* Services Header */
+  .services-header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px; /* Add space between header and paragraph */
+  }
+  
+  /* Service Description */
+  .services-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px; /* Space before the service cards */
+  }
+
+/* Service text  */
+
+  .service-text{
+
+    height: 30dvh;
+   
+    overflow-y: scroll;
+
+  }
+
+
+  
+  /* Service Cards Section */
+  .service-cards-section {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
+    gap: 20px; /* Space between each service card */
+    padding: 20px; /* Padding around the entire container */
+  }
+  
+  /* Ensure each service card is properly styled */
+  .service-card {
+    background-color: #fff; /* White background for each service card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Align text in the center */
+  }
+
+ @media(max-width: 1080px){
+
+   .single-service-container{
+    display: flex !important;
+    flex-direction: column !important;
+    height: fit-content !important;
+   
+   }
+
+   /* Horizontal Scrollbar */
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+ }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 1024px) {
+    .service-cards-section {
+      grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    }
+
+    .single-service-container {
+      flex-direction: column !important;
+      min-height: auto;
+      
+      height: fit-content !important;
+    
+    }
+
+    .service-text{
+      height: fit-content;
+    }
+
+    .service-image{
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-cards-section {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+
+   
+  }
+  
+  @media (max-width: 480px) {
+    .service-cards-section {
+      grid-template-columns: 1fr; /* One column on very small screens */
+    }
+  }
+  
+
+
+
+/* src/components/services.css */
+
+/* Service Cards Section */
+.service-cards-section {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Create four equal-width columns */
+    gap: 20px; /* Space between each service card */
+    padding: 20px; /* Padding around the entire container */
+  }
+  
+  /* Ensure each service card is properly styled */
+  .service-card {
+    background-color: #fff; /* White background for each service card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Align text in the center */
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 1080px) {
+    .service-cards-section {
+      grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    }
+
+    /* Service Image */
+  .service-image {
+    
+    min-width: 100% ;
+    max-height: 400px ;
+    /* max-height: 400px; Prevent image from going beyond 40% */
+   
+  }
+
+  .service-image img{
+    
+    max-height: 300px;
+   
+  }
+  }
+  
+  @media (max-width: 870px) {
+    .service-cards-section {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+
+    .single-service-container {
+     
+      flex-direction: column !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .service-cards-section {
+      grid-template-columns: 1fr; /* One column on very small screens */
+    }
+  }
+  
+
+  /* Main Service Container */
+.single-service-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Space between image and content */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 90%; /* Container width set to 90% of its parent */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    height: 60dvh;
+    
+    /* background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Service Image */
+  .service-image {
+    flex: 0 0 40%; 
+    max-width: 40%; /* Prevent image from going beyond 40% */
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit:cover /* Ensure the image covers the area without distorting */
+    
+  }
+  
+  /* Service Details Section */
+  .service-details {
+    flex: 1; /* Take up the remaining space (60%) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Space between elements in the details section */
+  }
+  
+  /* Service Title */
+  .service-details h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Service Description */
+  .service-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below description */
+    border:solid red 1px;
+  }
+  
+  /* Enquire Button */
+  .enquire-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content; /* Fit the width to button content */
+  }
+  
+  .enquire-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Feedback Section */
+  .feedback-section {
+    margin-top: 30px; /* Space above feedback section */
+  }
+  
+  .feedback-section h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px; /* Space below heading */
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+  .submit-feedback {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-feedback:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

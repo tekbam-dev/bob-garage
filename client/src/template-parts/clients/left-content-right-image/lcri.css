@@ -1,0 +1,50 @@
+/* General styling for the section */
+section {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 50px;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 15px; /* Adds padding for smaller screens */
+    box-sizing: border-box; /* Includes padding in width calculation */
+  }
+  
+  /* Styling for text content */
+  .text-content {
+    flex: 1;
+    padding-top: 30px;
+  }
+  
+  /* Styling for image content */
+  .image-content img {
+    width: 50%;
+    border-radius: 8px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 1280px) {
+    section {
+      flex-direction: column; /* Stack the text and image vertically */
+      align-items: center; /* Center-align content */
+    }
+  
+    .text-content {
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .image-content img {
+      max-width: 90%; /* Reduce image width on smaller screens */
+    }
+  }
+  
+  /* Additional media query for extra small screens */
+  @media (max-width: 576px) {
+    section {
+      gap: 30px; /* Reduce gap on extra small screens */
+    }
+  
+    .image-content img {
+      max-width: 100%; /* Ensure image fits within the screen */
+    }
+  }
+  

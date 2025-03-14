@@ -1,0 +1,364 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+  padding: 0px;
+  
+}
+
+
+
+
+/* Horizontal Scrollbar */
+::-webkit-scrollbar {
+  height: 16px; /* Height of horizontal scrollbar */
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--primary-colour)
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Css for theme handling  */
+
+:root{
+
+  --primary-colour: #9bd388;
+  --nav-menu-colour:#9bd388;
+  --banner-background-colour: #333333;
+  --main-body-background-colour:51,51,51;
+  --main-body-text-colour: #333333;
+  --button-background-colour-primary: 155,211,136;
+  --button-text-colour-primary: #333333;
+  --button-background-colour-second: 51, 51, 51;
+  --button-text-colour-second: #FEFEE2;
+  --list-heading-colour-on-dark-bg: #9bd388;
+  --list-item-colour-on-dark-bg : #FEFEE2;
+  --accordian-item-border: #333333;
+  --accordian-background: 51,51,51;
+  --staff-container: #FEFEE2;
+
+
+}
+
+
+[data-theme = "dark-theme"]{
+
+  --primary-colour:#091F5B;
+  --nav-menu-colour: #D7D9B1;
+  --banner-background-colour: #091F5B;
+  --main-body-background-colour:237,240,245;
+  --main-body-text-colour: #091F5B;
+  --button-background-colour-primary: 195, 49, 73;
+  --button-text-colour-primary: #EDF0F5;
+  --button-background-colour-second: 237,240,245;
+  --button-text-colour-second: #333333;
+  --list-heading-colour-on-dark-bg:#5B85AA
+  ;
+  --list-item-colour-on-dark-bg : #D7D9B1
+  ;
+  --staff-container: #333333;;
+  --accordian-item-border: #333333;
+  --accordian-background: 215, 217, 177;
+}
+
+/* All body 
+ */
+#root , .home>section {
+
+ background-color: rgba(var(--main-body-background-colour),0.98);
+
+
+}
+
+.home{
+  width: 95%;
+  margin: 20px auto;
+}
+
+
+/* Clients pages colour Schemes  */
+/* Navbar container styling */
+  .navbar {
+   background-color: var(--banner-background-colour);
+   
+  
+  }
+
+  .navbar .nav-item .nav-link{
+    color: var(--nav-menu-colour);
+  }
+
+  
+/* Sign in and Register button styles */
+.nav-item.login .nav-link,
+.nav-item.signup .nav-link {
+
+  color: var(--button-text-colour-primary); /* Text color */
+  background-color: rgba(var(--button-background-colour-primary),1);/* Button background color */
+  text-decoration: none;
+
+}
+
+
+.nav-item.login .nav-link:hover,
+.nav-item.signup .nav-link:hover {
+  background-color: rgba(var(--button-background-colour-primary),0.8);
+}
+
+/* Footer Colour scheme
+*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--banner-background-colour);
+ 
+}
+
+.footer-column h3,
+  .footer-column h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: var(--list-heading-colour-on-dark-bg) !important;
+  }
+
+
+  .footer-column ul li a {
+   color: var(--list-item-colour-on-dark-bg);
+  }
+
+
+  /* About Page Colour Scheme */
+
+  .about-container, .about-container > * {
+   
+
+    background-color: rgba(var(--button-background-colour-second),0.8) !important; 
+    
+    /* box-shadow: 0 4px 10px rgba(2, 65, 54, 0.1);  */
+  
+  }
+
+  .about-container h2 ,.about-container h3,.home .intro-section h1, .home .award-list h2, .home .award-list ul h3,.staff-container,.team-member-designation,.team-member-card h2,.staff-container h1,.blog-heading{
+    color: var(--primary-colour) !important;
+  }
+
+  .staff-container h2{
+    color: var(--staff-container) !important;
+  }
+  .about-container p , div.about-container > div.mission-vision-container span, .home .intro-section p, .home .award-list ul p{
+    color: var(--button-text-colour-second);
+  }
+
+  .achievements .icon-card{
+    background-color: rgba(var(--button-background-colour-second),0.05);
+    
+  }
+
+
+  /* //Service Page */
+
+  .services-container > * {
+    background-color: rgba(var(--main-body-background-colour),0.5);
+  }
+
+  .service-card,.team-member-card , .left-content-right-image,.home .award-list ul li {
+    background-color:rgba(var(--main-body-background-colour) ,0.9) ;
+    border: rgba(var(--main-body-background-colour) ,1),solid,2px !important;
+  }
+
+
+  .accordion-item .accordion-title{
+    background-color:rgba(var(--accordian-background) ,0.9) ;
+    border: rgba(var(--accordian-item-border) ,1),solid,2px !important;
+  }
+
+ div.faq-section .accordion-content {
+    background-color:rgba(var(--main-body-background-colour) ,0.2) !important ;
+  
+  }
+
+  .faq-section h2{
+    color: var(--primary-colour) !important;
+  }
+
+  .services-container h1, h3.service-card-title,.team-member-name,.team-member-designation.team-member-description,.left-content-right-image .text-content h2{
+    color: var(--primary-colour) !important;
+  }
+
+
+.service-card-description,.team-member-description,.left-content-right-image .text-content p, .accordion-content p{
+  color: var(--button-text-colour-second) !important;
+  }
+
+.service-card-price,  .accordion-item .accordion-title {
+  color: var(--primary-colour) !important;
+}
+
+  .services-container p{
+    color:  var(--button-text-colour-second) !important;
+  }
+
+
+  .service-details h1, .service-price{
+    color:  var(--primary-colour) !important;
+  }
+
+  .service-details p{
+    color:  var(--button-text-colour-second) !important;
+  }
+
+
+  .home .award-list {
+    /* background-color:rgba(var(--main-body-background-colour) ,0.9) ; */
+
+  }
+
+
+/* AdminDashboard.css */
+
+
+
+
+.admin-dashboard {
+  display: flex;
+ 
+ 
+ 
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  height: 100vh; /* Full height of the viewport */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+
+
+
+  /* justify-content: space-around; */
+  
+}
+  
+
+
+
+.intro-section {
+ 
+  padding: 40px;
+  text-align: center;
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.award-list {
+
+  padding: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-list h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.award-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.award-list li {
+ 
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.award-list h3 {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.award-list p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+
+
+
+body{
+  background-color: rgba(var(--main-body-background-colour) ,0.05)!important;
+  color: var(--main-body-text-colour) !important;
+  
+}
+
+ h2,h3,h4,h5,h6 {
+  color: var(--main-body-text-colour) !important;
+}
+
+.card-body{
+  display: flex;
+  min-height: 60dvh !important;
+  
+  border: solid green 1px;
+  justify-content: center; 
+  align-items:center;
+}
+
+.card-body form {
+  width: 40%;
+  /* height: 50%; */
+}

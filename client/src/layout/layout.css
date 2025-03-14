@@ -1,0 +1,198 @@
+* General Footer Styling */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1 1 200px; /* Each column takes up at least 200px */
+  margin: 10px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  color: #f4f4f4;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+/* Social Icons */
+.social-column .social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Logo Column */
+.logo-column img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo-column img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 576px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-column {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.85rem;
+  }
+
+  .logo-column img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.header{
+  position:sticky;
+  top: 0px;
+  z-index: 10;
+}
+
+/* Navbar container styling */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Logo styling */
+.logo {
+  padding-left: 50px; /* Add padding to the left of the logo */
+}
+
+.logo img {
+  max-height: 100px; /* Adjust the logo height */
+  height: auto;
+}
+
+/* Navbar container styling */
+.navbar .container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo styling */
+.logo {
+  padding-left: 100px; /* Add padding to the left of the logo */
+}
+
+/* Navbar links styling */
+.navbar-nav {
+  flex-grow: 0.1; /* Allow links to grow to take space */
+  display: flex;
+  justify-content: center; /* Center align links */
+}
+
+.navbar-nav .nav-link {
+  margin: 0 10px; /* Add spacing between regular links */
+}
+
+/* Spacing between the regular links and Sign In/Register buttons */
+.nav-item.signup,
+.nav-item.login {
+  margin-left: 0px; /* Add spacing from regular links */
+}
+
+/* Sign in and Register button styles */
+.nav-item.login .nav-link,
+.nav-item.signup .nav-link {
+  padding: 8px 16px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+
+  text-decoration: none;
+}
+
+.nav-item.signup {
+  margin-left: auto;
+}
+
+/* Right icon styling */
+.nav-item.icon {
+  margin-left: auto; /* Push icon to the right */
+  padding-right: 10px; /* Add padding to the right */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    justify-content: flex-start; /* Align links left on smaller screens */
+  }
+  .logo {
+    padding-left: 20px; /* Add padding to the left of the logo */
+  }
+}
+
+
+.contactFooter{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+  color:#fff
+}

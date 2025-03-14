@@ -1,0 +1,47 @@
+.service-card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+ 
+
+  }
+  
+  .service-card {
+   
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-card-title {
+    font-size: 1.2rem;
+    margin: 16px 0 8px;
+  }
+  
+  .service-card-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 8px 0 16px;
+  }
+  
+  .service-card-price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  

@@ -1,0 +1,76 @@
+/* src/components/about.css */
+
+.about-container {
+    max-width: 1800px; /* Limit container width for a cleaner look */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between sections */
+  }
+  
+  .about-container > * {
+    background-color: #ffffff; /* White background for each section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Internal padding for each section */
+    margin: 0 20px; /* Side margin to reduce width slightly on large screens */
+  }
+  
+  
+  
+  /* Achievements Section */
+  .achievements-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .achievement-card {
+    width: 30%; /* Three cards per row */
+    min-width: 250px; /* Ensure cards don't get too small on smaller screens */
+    text-align: center;
+    padding: 15px;
+    
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .achievement-card-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Mission & Vision Section  */
+   .mission-vision-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .mission-vision-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .mission-vision-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .mission-vision-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .mission-vision-icon {
+    width: 20px;
+    height: 20px;
+  }
+  

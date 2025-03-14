@@ -1,0 +1,58 @@
+
+.left-content-right-image {
+  width: 80%;              /* Card occupies 80% of the page width */
+  max-width: 1200px;       /* Limit the maximum width for larger screens */
+  margin: 20px auto;       /* Center the card with auto margins */
+  padding: 20px;           /* Add padding inside the card */
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px;     /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;           /* Display the image and text side by side */
+  gap: 20px;               /* Space between the image and text */
+  align-items: center;     /* Center content vertically */
+  flex-direction: row;     /* Default: Left image, right content */
+}
+
+/* Image styling */
+.image-content {
+  flex: 1;   
+ 
+  text-align: center;           /* Image takes 50% of the container */
+}
+
+.image-content img {
+  width: 100%;            /* Image fills its container width */
+  height: auto;           /* Maintain image aspect ratio */
+  border-radius: 8px;     /* Round corners of the image */
+  object-fit: cover;      /* Ensure image covers its container */
+}
+
+/* Text content styling */
+.text-content {
+  flex: 1;                /* Text takes 50% of the container */
+}
+
+.text-content h2 {
+  font-size: 1.8em;       /* Larger heading font */
+  color: #333;            /* Dark gray color */
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 1em;
+  color: #555;            /* Medium gray color */
+  line-height: 1.6;       /* Better readability with line height */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .left-content-right-image {
+    flex-direction: column; /* Stack image above the text content */
+    text-align: center;     /* Center align text for smaller screens */
+  }
+
+  .image-content,
+  .text-content {
+    flex: unset;           /* Remove flex, let content flow naturally */
+  }
+}

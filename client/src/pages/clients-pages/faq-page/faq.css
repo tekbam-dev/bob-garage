@@ -1,0 +1,43 @@
+.faq-section {
+    
+    width: 90%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  .faq-section h2{
+    margin: 30px 0px;
+  }
+  
+  .accordion-item {
+    margin-bottom: 10px;
+  
+  }
+  
+  .accordion-title {
+    width: 100%;
+    background-color: #0056b3;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    padding: 40px 20px;
+  }
+  
+  .accordion-title:hover {
+    background-color: #004494;
+  }
+  
+  .accordion-content {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border-top: 1px solid #ddd;
+  }
+  

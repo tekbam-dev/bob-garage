@@ -1,0 +1,75 @@
+/* For screens smaller than 576px */
+@media (max-width: 576px) {
+    .admin-dashboard {
+      display: flex;
+      padding: 10px;
+      flex-direction: column;
+
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: relative;
+      margin-bottom: 10px;
+      height: fit-content;
+    }
+  
+    .sidebar ul {
+      padding-left: 0;
+      list-style-type: none;
+    }
+  
+    .sidebar h2 {
+      font-size: 18px;
+    }
+  
+    .sidebar details {
+      margin-bottom: 10px;
+    }
+  
+    .sidebar details summary {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    .sidebar details ul {
+      padding-left: 20px;
+    }
+  
+    .main-content {
+      margin: 10px 0;
+     min-height: max-content;
+      
+    }
+  
+    .main-content h2 {
+      font-size: 20px;
+    }
+  
+    .main-content h4 {
+      font-size: 16px;
+    }
+
+    .main-content h4 {
+        font-size: 16px;
+      }
+  
+    .content {
+      margin: 20px 0;
+    }
+  
+    /* Make any other adjustments needed for smaller screens */
+    .content {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .content .admin-service,
+    .content .add-blog,
+    .content .edit-blog,
+    .content .delete-blog,
+    .content .add-service {
+      margin-bottom: 20px;
+    }
+  }
+  

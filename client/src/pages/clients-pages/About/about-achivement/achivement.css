@@ -1,0 +1,55 @@
+/* src/components/about.css */
+
+/* Achievements Section */
+.achievements {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));;/* Create three equal-width columns */
+  gap: 20px; 
+  padding: 20px; /* Padding around the entire container */
+
+  justify-items: center;
+   
+  }
+  
+  /* Ensure the IconTopBelowContent components are styled properly */
+  .achievement-card {
+    background-color: #f9f9f9; /* Light background for each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 15px; /* Internal padding for each card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Align text in the center */
+  }
+  
+  .achievement-card-icon {
+    font-size: 2rem; /* Icon size */
+    margin-bottom: 10px; /* Space below the icon */
+  }
+  
+  .achievement-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .achievement-card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 768px) {
+     .achievements {
+      grid-template-columns: 1fr ; 
+    }
+  } 
+  
+  @media (max-width: 480px) {
+     .achievements {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
