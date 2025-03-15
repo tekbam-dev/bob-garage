@@ -5,7 +5,7 @@ import AddService from "../../features/service/components/AddService.jsx";
 import { FaTimes,FaPencilAlt } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
 
 const AdminService = () => {

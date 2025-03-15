@@ -5,7 +5,7 @@
  */
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
 import axios from 'axios';
 

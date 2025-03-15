@@ -10,12 +10,12 @@
 
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
 import axios from 'axios';
 
 //Base URLS for blog backend request 
 const blogsURL = `${apiUrl}/api/blogs`;
-const blogURL = 'apiUrl/api/blog';
+const blogURL = `${apiUrl}/api/blog`;
 
 // Initial state
 const initialState = {
