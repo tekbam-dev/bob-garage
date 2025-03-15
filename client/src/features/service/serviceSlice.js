@@ -101,6 +101,8 @@ export const singleService = createAsyncThunk(
   "service/singleService",
   async (id) => {
     try {
+
+      console.log(id);
       const singleServiceReturn = await axios.get(`${baseServiceURL}/${id}`);
 
       // console.log(singleServiceReturn);

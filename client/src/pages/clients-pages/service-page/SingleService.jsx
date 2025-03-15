@@ -11,9 +11,8 @@ import { useState } from "react";
 // import './SingleService.css';
 
 const SingleService = () => {
-
-  const {id} = useParams();
-   id = Number(id);
+  
+  const id = Number(useParams().id);
   window.scrollTo(0,0);
  
   const [idState, setIdState] = useState(id);
