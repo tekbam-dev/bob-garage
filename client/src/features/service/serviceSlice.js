@@ -9,8 +9,7 @@
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import dotenv from 'dotenv';
-dotenv.config();
+
 const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
 console.log(apiUrl);
