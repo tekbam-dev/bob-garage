@@ -10,9 +10,9 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 // Base user urls
-const baseUsersURL = "http://localhost:3001/api/users";
+const baseUsersURL = `${apiUrl}/api/users`;
 
-const baseUserURL = "http://localhost:3001/api/user";
+const baseUserURL = `${apiUrl}/api/user`;
 /**
  * Creating initial state
  */

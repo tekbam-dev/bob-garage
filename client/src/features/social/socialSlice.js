@@ -1,9 +1,10 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 // Social URLs
-const socialListURL = 'http://localhost:3001/api/socials';
-const socialURL = "http://localhost:3001/api/social";
+const socialListURL = `${apiUrl}/api/socials`;
+const socialURL = `${apiUrl}/api/social`;
 
 // Initial state
 const initialState = {

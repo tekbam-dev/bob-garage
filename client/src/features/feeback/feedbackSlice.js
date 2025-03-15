@@ -7,11 +7,12 @@
  */
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+const apiUrl = process.env.REACT_APP_API_URL;
 import axios from "axios";
 
 // Base URL
-const feedsURL = "http://localhost:3001/api/feedbacks";
-const feedURL = "http://localhost:3001/api/feedback";
+const feedsURL = `${apiUrl}/api/feedbacks`;
+const feedURL = `${apiUrl}/api/feedback`;
 
 // Initial state
 const initialState = {
