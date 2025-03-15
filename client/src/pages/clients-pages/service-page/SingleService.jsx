@@ -33,7 +33,7 @@ const SingleService = () => {
     setService(serviceRetn);
   }, [idState, serviceRetn]);
 
-
+console.log(`Single service page`,serviceRetn);
 
   
   return (
