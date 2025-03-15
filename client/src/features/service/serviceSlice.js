@@ -9,7 +9,11 @@
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-const apiUrl = process.env.REACT_APP_API_URL;
+import dotenv from 'dotenv';
+dotenv.config();
+const apiUrl = import.meta.env.VITE_BACKEND_URL;
+
+console.log(apiUrl);
 //Base URL's fro service
 const baseServicesURL = `${apiUrl}/api/services`;
 
