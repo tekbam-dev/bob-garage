@@ -9,7 +9,7 @@
 
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-
+const apiUrl = process.env.REACT_APP_API_URL;
 //Base URL's fro service
 const baseServicesURL = `${apiUrl}/api/services`;
 
