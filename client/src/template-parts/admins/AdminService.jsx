@@ -5,6 +5,7 @@ import AddService from "../../features/service/components/AddService.jsx";
 import { FaTimes,FaPencilAlt } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 
+const apiUrl = process.env.REACT_APP_API_URL;
 
 
 const AdminService = () => {
@@ -12,7 +13,7 @@ const AdminService = () => {
   const [servicesArray,setServicesArray] = useState([]);
 
   const endpoint = axios.create({
-    baseURL: "apiUrl/api",
+    baseURL: `${apiUrl}/api`,
     headers: {
       "Content-Type": "application/json",
     },
