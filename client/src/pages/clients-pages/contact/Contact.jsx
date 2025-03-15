@@ -3,12 +3,10 @@
  * @description Contact component for contact page
  * @version 2.0.0
  */
-
-
 import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import logo from '../../../assets/images/logo-black.png';
- import './contact.css';
+import './contact.css';
 
 const Contact = () => {
   return (
