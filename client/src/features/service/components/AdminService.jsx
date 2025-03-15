@@ -10,7 +10,7 @@
 //   const [servicesArray, setServicesArray] = useState([]);
 
 //   const endpoint = axios.create({
-//     baseURL: "http://localhost:3001/api",
+//     baseURL: "apiUrl/api",
 //     headers: {
 //       "Content-Type": "application/json",
 //     },

@@ -5,12 +5,14 @@
  */
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+const apiUrl = process.env.REACT_APP_API_URL;
+
 import axios from 'axios';
 
 import setAuthToken from '../../utils/setAuthToken';
 
 // Create the baseURL for our auth requests.
-const baseURL = 'http://localhost:3001/api/auth'
+const baseURL = `${apiUrl}/api/auth`;
 
 // Set up the initial state
 const initialState = {
@@ -77,7 +79,7 @@ export const register = createAsyncThunk('auth/register', async(newUser) => {
   // log the function
  
   try {
-    // endpoint http://localhost:3001/api/auth/register
+    // endpoint apiUrl/api/auth/register
     const response = await axios.post(`${baseURL}/register`, newUser);
     // log the response
     

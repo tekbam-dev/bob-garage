@@ -7,10 +7,11 @@
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 // Create a variable to store our base URL for requests
-const optionsURL = 'http://localhost:3001/api/options';
-const optionURL =  'http://localhost:3001/api/option';
+const optionsURL = `${apiUrl}/api/options`;
+const optionURL =  `${apiUrl}/api/option`;
 
 // Async thunk for fetching all options data
 export const fetchAllOptions = createAsyncThunk('option/fetchAllOptions', async() => {
