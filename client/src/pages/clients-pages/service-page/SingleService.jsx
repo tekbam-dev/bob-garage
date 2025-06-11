@@ -30,8 +30,9 @@ const SingleService = () => {
   useEffect(() => {
     
     dispatch(singleService(id)).unwrap();
-
+ if(serviceRetn){
     setService(serviceRetn);
+ }
   }, [idState, serviceRetn]);
 
 console.log(`Single service page`,serviceRetn);
