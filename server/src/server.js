@@ -36,6 +36,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+// Handle preflight requests (OPTIONS) for all routes
+app.options('*', cors());
+
 //Creating route for CRUD operation - Test route
 app.get("/test", (req, res) => {
   //logout the path and the request
