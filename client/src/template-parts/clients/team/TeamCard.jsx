@@ -7,6 +7,10 @@ const TeamCard = ({ name, role, image, description }) => {
     <div className="team-member-card">
       {/* Image at the top */}
       <img src={image} alt={name} className="team-member-image" />
+<span style="display: inline-block; width: 100%; text-align: right;">
+  Designed by Freepik
+</span>
+      
 
       {/* Name */}
       <h2 className="team-member-name">{name}</h2>
